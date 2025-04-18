@@ -1,34 +1,27 @@
+# Keerthan Devera — Personal Portfolio Website
 
+🚀 **Live Website**: [personal-website-orcin-rho.vercel.app](https://personal-website-orcin-rho.vercel.app/)
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+Welcome to my personal portfolio website! This is where I showcase my background, technical skills, projects, and experience as a Software Developer and STEM Educator.
 
-## Prerequisites
+---
 
-Before you begin, ensure you have met the following requirements:
+## 🧑‍💻 About Me
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+I’m currently pursuing a B.Sc. in Computer Science at York University. I enjoy solving real-world problems through elegant and scalable web applications. I have experience working with technologies like:
 
-## Installing vCard
+- JavaScript, Python, TypeScript, Java, C/C++, C#
+- React.js, Node.js, MongoDB, PostgreSQL, Docker
+- Git, GitHub Actions, Jenkins, and serverless architecture (AWS Lambda, Azure Functions)
 
-To install **vCard**, follow these steps:
+---
 
-Linux and macOS:
+## 📂 Features
 
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+- Responsive and mobile-friendly design
+- Sidebar with social media/contact links
+- Animated sections and smooth transitions
+- Modular components (About, Resume, Portfolio, Blog, Contact)
+- Resume download/view option
 
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-## License
-
-MIT
+---
