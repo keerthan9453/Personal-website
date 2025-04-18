@@ -48,10 +48,10 @@ for (let i = 0; i < testimonialsItem.length; i++) {
   });
 
 }
+// / add click event to modal close button
+// modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+// overlay.addEventListener("click", testimonialsModalFunc);
 
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
@@ -61,7 +61,11 @@ const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+if (select) {
+  select.addEventListener("click", function () {
+    elementToggleFunc(this);
+  });
+}
 
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
@@ -155,5 +159,39 @@ for (let i = 0; i < navigationLinks.length; i++) {
       }
     }
 
+  });
+}
+// Animate services when 'About' section becomes active
+const animateServices = function () {
+  const serviceItems = document.querySelectorAll(".service-item");
+  serviceItems.forEach((item, index) => {
+    item.style.opacity = "0";
+    item.style.transform = "translateY(20px)";
+    item.style.transition = "none";
+    setTimeout(() => {
+      item.style.transition = "all 0.5s ease";
+      item.style.opacity = "1";
+      item.style.transform = "translateY(0)";
+    }, 100 * index);
+  });
+};
+
+// Call animation only when About page is opened
+for (let i = 0; i < navigationLinks.length; i++) {
+  navigationLinks[i].addEventListener("click", function () {
+    for (let j = 0; j < pages.length; j++) {
+      if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
+        pages[j].classList.add("active");
+        navigationLinks[j].classList.add("active");
+        window.scrollTo(0, 0);
+
+        if (pages[j].dataset.page === "about") {
+          animateServices();
+        }
+      } else {
+        pages[j].classList.remove("active");
+        navigationLinks[j].classList.remove("active");
+      }
+    }
   });
 }
