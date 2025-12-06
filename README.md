@@ -1,6 +1,6 @@
 # Keerthan Devera — Personal Portfolio Website
 
-🚀 **Live Website**: [personal-website-orcin-rho.vercel.app](https://personal-website-orcin-rho.vercel.app/)
+🚀 **Live Website**: [personal-website-orcin-rho.vercel.app](https://personal-website-keerthans-projects-bd620c41.vercel.app)
 
 Welcome to my personal portfolio website! This is where I showcase my background, technical skills, projects, and experience as a Software Developer and STEM Educator.
 
