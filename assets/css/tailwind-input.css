@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import existing custom stylesheet so PostCSS processes it into the compiled output */
+@import "./style.css";
