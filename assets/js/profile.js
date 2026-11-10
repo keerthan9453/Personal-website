@@ -22,7 +22,7 @@ window.PROFILE = {
     linkedin: "https://www.linkedin.com/in/Keerthan-Devera",
   },
   resume: {
-    href: "assets/pdf/Keerthan_Software-9.pdf",
+    href: "assets/pdf/Keerthan_Software-16.pdf",
     downloadName: "Keerthan_Devera_Resume.pdf",
   },
 
@@ -38,6 +38,7 @@ window.PROFILE = {
   run: {
     suite: "recruiter-check",
     lines: [
+      { label: "Cloud Engineering Intern", text: "Building cloud infrastructure and CI/CD pipelines with AWS, GCP and Kubernetes." },
       { label: "Quality engineering", text: "Test automation at Tangerine (Scotiabank) with WebdriverIO, Selenium, Appium, Karate and Rest Assured." },
       { label: "Backend", text: "Java Spring Boot services on SQL databases, plus Python tooling for reporting and dashboards." },
       { label: "Cloud and CI/CD", text: "GCP and Kubernetes test environments, Docker, Jenkins pipelines, and AWS EC2, Lambda and S3." },
@@ -47,6 +48,19 @@ window.PROFILE = {
   },
 
   experience: [
+    {
+      role: "Cloud Engineering intern, COPS Team",
+      org: "Scotiabank",
+      place: "Toronto, ON",
+      start: "2026-04",
+      end: "2026-08",
+      bullets: [
+        "Building cloud infrastructure and CI/CD pipelines with **AWS**, **GCP** and **Kubernetes**.",
+        "Automating provisioning of **EC2 instances, RDS backups and S3 lifecycle rules**, with **AWS Lambda** for automation.",
+        "Implementing **Route 53 public/private zones** with health checks to simulate DNS failover and routing policies.",
+      ],
+      tech: ["AWS", "GCP", "Kubernetes", "Docker", "Jenkins"],
+    },
     {
       role: "Technology Intern, QE Tools Team",
       org: "Tangerine (Scotiabank)",
@@ -91,6 +105,19 @@ window.PROFILE = {
   // project once you want a "Source" or "Live demo" link to appear.
   projects: [
     {
+      name: "Chat-With-Your-Document-RAG",
+      categories: ["Full stack", "AI", "RAG"],
+      stack: ["RAG", "Python", "ChromaDB", "Jupyter Notebook"],
+      bullets: [
+        "Built a **Retrieval-Augmented Generation (RAG)** system that allows users to chat with their documents using **Python** and **ChromaDB**.",
+        "Implemented a **Jupyter Notebook** interface for users to upload documents and interact with the RAG system.",
+        "Utilized **ChromaDB** with **Reciprocal Rank Fusion** (RRF)for efficient document retrieval and **Python** for natural language processing and response generation.",
+        "**Cohere Rerank** to improve relevant passage ranking from 3rd to 2nd in a retrieval test"
+      ],
+      links: ["https://github.com/keerthan9453/Chat-With-Your-Documents-RAG-"]
+
+    },
+    {
       name: "Eco-Map",
       award: "Hack the Valley winner",
       categories: ["Full stack", "AI"],
@@ -100,7 +127,35 @@ window.PROFILE = {
         "Designed and implemented the backend with **Node.js and Express**, managing user queries through **MongoDB**.",
         "Provided optimized routes and used **Postman** to test API endpoints.",
       ],
-      links: [],
+      links: ["https://github.com/keerthan9453/eco-friendly-planner"],
+    },
+    {
+      name: "Decentrify",
+      award: "UofTHacks 13",
+      categories: ["Full stack", "Distributed Systems", "Machine Learning", "Cloud"],
+      stack: [
+        "Python",
+        "FastAPI",
+        "PyTorch",
+        "RabbitMQ",
+        "MongoDB",
+        "AWS S3",
+        "Boto3",
+        "Docker",
+        "JWT",
+        "Pandas"
+      ],
+      bullets: [
+        "Developed a **peer-to-peer distributed machine learning platform** enabling multiple worker nodes to collaboratively train neural networks across distributed systems.",
+        "Engineered a **FastAPI backend with RabbitMQ messaging**, coordinating distributed workers through asynchronous commands, training events, and real-time heartbeat monitoring.",
+        "Integrated **AWS S3 and MongoDB** to manage dataset distribution, training sessions, worker states, and aggregated model performance metrics.",
+        "Implemented configurable **PyTorch neural network training** with adjustable epochs, batch sizes, learning rates, and automatic GPU detection.",
+        "Built **JWT-based authentication and secure communication** using password hashing and TLS/SSL for coordinating distributed training sessions."
+      ],
+      links: [
+        "https://github.com/keerthan9453/Decentrify"
+      ],
+
     },
     {
       name: "YorkU Blockchain Blog",
