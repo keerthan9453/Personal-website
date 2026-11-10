@@ -196,9 +196,9 @@ window.PROFILE = {
     degree: "Honours Bachelor of Science, Computer Science",
     place: "Toronto, ON",
     start: "2022-09",
-    end: "2026-08",
+    end: "2028-05",
     roles: [
-      { title: "Python Developer", org: "YUBlueprint" },
+      { title: "Project Lead", org: "YUBlueprint" },
       { title: "Blockchain Developer", org: "Blockchain @ Lassonde" },
       { title: "Instructor", org: "Science Engagement Programs (SEP)" },
     ],
