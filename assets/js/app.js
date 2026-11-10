@@ -363,7 +363,7 @@
       var dark = document.documentElement.getAttribute('data-theme') === 'dark';
       btn.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
       var meta = $('meta[name="theme-color"]');
-      if (meta) meta.setAttribute('content', dark ? '#0E1117' : '#F4F6F9');
+      if (meta) meta.setAttribute('content', dark ? '#111111' : '#F3EEE3');
     }
     btn.addEventListener('click', function () {
       var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
